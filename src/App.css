@@ -1,3 +1,28 @@
+.myNav {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-evenly;
+}
+
+.logoContainer{
+  display:flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.botonera{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.MyNav ul {
+  padding-left: 0;
+}
+.MyNav li {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
