@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css';
-import logo from './logoFO.png';
+import logo from '../../assets/img/logoFO.png';
+import CartWidget from './CartWidget';
 
 function NavBar(){
     return(
@@ -16,6 +17,7 @@ function NavBar(){
                 <div>Specials</div>
                 <div>Organic Lunch</div>
             </div>
+            <CartWidget />
         </nav>
     );
 }
