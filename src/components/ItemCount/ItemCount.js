@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './ItemCount.css';
 
 
-function ItemCount({initialValue, stock = 5}) {
+function ItemCount({initialValue, stock}) {
 
     const [value, setValue] = useState(initialValue);
 
