@@ -1,0 +1,38 @@
+.producto{
+    border: 1px black dotted;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+}
+
+.count-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #808080;
+    width: 200px;
+}
+
+.count-container p{
+    display: flex;
+    font-weight: bold;
+}
+
+.btn-add{
+    display: flex;
+    background-color: #dbdbdb;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.btn-sub{
+    display: flex;
+    background-color: #dbdbdb;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.btn-toCart{
+    width: 200px;
+    background-color: #ff6347;
+}
