@@ -1,6 +1,6 @@
 .myNav {
     padding: 15px;
-    background-color: rgb(165, 164, 164);
+    background-color: #a5a4a4;
 }
 
 .logoContainer{
@@ -30,7 +30,7 @@
 }
 
 .botonera div:hover{
-    color: rgb(230, 15, 0);
+    color: #ff6347;
 }
 
 .shoppingCart{

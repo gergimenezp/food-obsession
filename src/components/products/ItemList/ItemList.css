@@ -1,0 +1,10 @@
+.itemList-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+.listed-items{
+    display: flex;
+}
