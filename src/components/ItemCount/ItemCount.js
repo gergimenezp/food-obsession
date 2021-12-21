@@ -16,12 +16,11 @@ function ItemCount({initialValue, stock}) {
 
     return(
         <div>
-            <div className="producto">Aquí va mi producto</div>
-                <div className="count-container">
-                    <button className="btn-sub" onClick={handleSub}> sub - </button>
-                    <p>{value}</p>
-                    <button className="btn-add" onClick={handleAdd}> add + </button>
-                </div>
+            <div className="count-container">
+                <button className="btn-sub" onClick={handleSub}> sub - </button>
+                <p>{value}</p>
+                <button className="btn-add" onClick={handleAdd}> add + </button>
+            </div>
             <button className="btn-toCart">Add to Cart</button>
         </div>
     );

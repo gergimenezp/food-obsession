@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Meatless Special",
+        "description": "Homemade gnocchi Alla Sorrentina - 4 portions",
+        "price": 48,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=34",
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "title": "Taco Festival",
+        "description": "Chicken Enchiladas - 4 portions",
+        "price": 58,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=97",
+        "stock": 7
+    },
+    {
+        "id": 3,
+        "title": "Fish Special",
+        "description": "Grilled Salmon Fillet - 4 portions",
+        "price": 62,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=29",
+        "stock": 8
+    },
+    {
+        "id": 4,
+        "title": "lasagna",
+        "description": "Traditional lasagna with spinach - 4 portions",
+        "price": 62,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=17",
+        "stock": 3
+    },
+    {
+        "id": 5,
+        "title": "empanada sale",
+        "description": "Your choice of Criollas (beef), Chicken, Spinach & Feta or Ham & Cheese - per dozen",
+        "price": 26,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=161",
+        "stock": 20
+    },
+    {
+        "id": 6,
+        "title": "side salad",
+        "description": "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
+        "price": 24,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=14",
+        "stock": 8
+    },
+    {
+        "id": 7,
+        "title": "spiced Salmon Kebabs",
+        "description": "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
+        "price": 56,
+        "pictureURL": "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=30",
+        "stock": 3
+    }
+]
