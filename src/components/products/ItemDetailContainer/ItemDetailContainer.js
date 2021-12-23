@@ -8,6 +8,7 @@ function ItemDetailContainer() {
     let catalog  = [
         {
             id: 101,
+            category: "specials",
             title: "Meatless Special",
             description: "Homemade gnocchi Alla Sorrentina - 4 portions",
             price: 48,
@@ -16,6 +17,7 @@ function ItemDetailContainer() {
         },
         {
             id: 102,
+            category: "specials",
             title: "Taco Festival",
             description: "Chicken Enchiladas - 4 portions",
             price: 58,
@@ -24,6 +26,7 @@ function ItemDetailContainer() {
         },
         {
             id: 103,
+            category: "specials",
             title: "Fish Special",
             description: "Grilled Salmon Fillet - 4 portions",
             price: 62,
@@ -32,6 +35,7 @@ function ItemDetailContainer() {
         },
         {
             id: 104,
+            category: "specials",
             title: "lasagna",
             description: "Traditional lasagna with spinach - 4 portions",
             price: 62,
@@ -40,6 +44,7 @@ function ItemDetailContainer() {
         },
         {
             id: 105,
+            category: "specials",
             title: "empanada sale",
             description: "Your choice of Criollas (beef), Chicken, Spinach & Feta or Ham & Cheese - per dozen",
             price: 26,
@@ -47,6 +52,7 @@ function ItemDetailContainer() {
             stock: 20
         },{
             id: 106,
+            category: "specials",
             title: "side salad",
             description: "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
             price: 24,
@@ -55,6 +61,7 @@ function ItemDetailContainer() {
         },
         {
             id: 107,
+            category: "specials",
             title: "spiced Salmon Kebabs",
             description: "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
             price: 56,
@@ -63,6 +70,7 @@ function ItemDetailContainer() {
         },
         {
             id: 201,
+            category: "empanadas",
             title: "Criolla",
             description: "Pastry wraps filled with ground Beef, onions, hard boil eggs and green olives. Exquisite South American traditional food that can be found in every kitchen, from street vendors to the Presidential Palace. Per dozen.",
             price: 29,
@@ -71,6 +79,7 @@ function ItemDetailContainer() {
         },
         {
             id: 202,
+            category: "empanadas",
             title: "Chicken",
             description: "Pastry wraps filled with shredded chicken, onions, peppers and a fragant blend of spices - per dozen",
             price: 29,
@@ -79,6 +88,7 @@ function ItemDetailContainer() {
         },
         {
             id: 203,
+            category: "empanadas",
             title: "Hawaiian",
             description: "Pastry wraps filled with ham, Mozzarella & Pineapples. A bitter-sweet special. Per dozen",
             price: 30,
@@ -87,6 +97,7 @@ function ItemDetailContainer() {
         },
         {
             id: 204,
+            category: "empanadas",
             title: "Lebanese",
             description: "Pastry wraps filled with lemon marinated beef and a mid east traditional seasoning - per dozen",
             price: 31,
@@ -95,6 +106,7 @@ function ItemDetailContainer() {
         },
         {
             id: 205,
+            category: "empanadas",
             title: "Egg & bacon",
             description: "Breakfast empanadas filled with egg, Cheese, Bacon and/or sausages - per dozen",
             price: 44,
@@ -103,6 +115,7 @@ function ItemDetailContainer() {
         },
 	    {
             id: 206,
+            category: "empanadas",
             title: "Salmon",
             description: "Breakfast empanadas filled with Smoked Salmon, Cream Cheese & Red Onions - per dozen",
             price: 44,
@@ -111,6 +124,7 @@ function ItemDetailContainer() {
         },
         {
             id: 207,
+            category: "empanadas",
             title: "Vegetarian",
             description: "Breakfast or lunch empanadas filled with egg, cheese, potatoes, onions, bell peppers, tomatoes, mushrooms",
             price: 38,
@@ -119,6 +133,7 @@ function ItemDetailContainer() {
         },
         {
             id: 301,
+            category: "dinner",
             title: "side salad",
             description: "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
             price: 24,
@@ -127,6 +142,7 @@ function ItemDetailContainer() {
         },
         {
             id: 302,
+            category: "dinner",
             title: "spiced Salmon Kebabs",
             description: "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
             price: 56,
@@ -135,6 +151,7 @@ function ItemDetailContainer() {
         },
         {
             id: 401,
+            category: "lunch",
             title: "Lebanese",
             description: "Pastry wraps filled with lemon marinated beef and a mid east traditional seasoning - per dozen",
             price: 31,
@@ -143,6 +160,7 @@ function ItemDetailContainer() {
         },
         {
             id: 402,
+            category: "lunch",
             title: "Egg & bacon",
             description: "Breakfast empanadas filled with egg, Cheese, Bacon and/or sausages - per dozen",
             price: 44,

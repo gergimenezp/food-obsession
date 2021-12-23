@@ -6,9 +6,10 @@ import { useEffect } from 'react/cjs/react.development';
 
 function ItemListContainer() {
 
-    let specials = [
+    let catalog  = [
         {
             id: 101,
+            category: "specials",
             title: "Meatless Special",
             description: "Homemade gnocchi Alla Sorrentina - 4 portions",
             price: 48,
@@ -17,6 +18,7 @@ function ItemListContainer() {
         },
         {
             id: 102,
+            category: "specials",
             title: "Taco Festival",
             description: "Chicken Enchiladas - 4 portions",
             price: 58,
@@ -25,6 +27,7 @@ function ItemListContainer() {
         },
         {
             id: 103,
+            category: "specials",
             title: "Fish Special",
             description: "Grilled Salmon Fillet - 4 portions",
             price: 62,
@@ -33,6 +36,7 @@ function ItemListContainer() {
         },
         {
             id: 104,
+            category: "specials",
             title: "lasagna",
             description: "Traditional lasagna with spinach - 4 portions",
             price: 62,
@@ -41,6 +45,7 @@ function ItemListContainer() {
         },
         {
             id: 105,
+            category: "specials",
             title: "empanada sale",
             description: "Your choice of Criollas (beef), Chicken, Spinach & Feta or Ham & Cheese - per dozen",
             price: 26,
@@ -48,6 +53,7 @@ function ItemListContainer() {
             stock: 20
         },{
             id: 106,
+            category: "specials",
             title: "side salad",
             description: "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
             price: 24,
@@ -56,17 +62,16 @@ function ItemListContainer() {
         },
         {
             id: 107,
+            category: "specials",
             title: "spiced Salmon Kebabs",
             description: "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
             price: 56,
             pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=30",
             stock: 3
-        }
-    ];
-
-    let empanadas= [
+        },
         {
             id: 201,
+            category: "empanadas",
             title: "Criolla",
             description: "Pastry wraps filled with ground Beef, onions, hard boil eggs and green olives. Exquisite South American traditional food that can be found in every kitchen, from street vendors to the Presidential Palace. Per dozen.",
             price: 29,
@@ -75,6 +80,7 @@ function ItemListContainer() {
         },
         {
             id: 202,
+            category: "empanadas",
             title: "Chicken",
             description: "Pastry wraps filled with shredded chicken, onions, peppers and a fragant blend of spices - per dozen",
             price: 29,
@@ -83,6 +89,7 @@ function ItemListContainer() {
         },
         {
             id: 203,
+            category: "empanadas",
             title: "Hawaiian",
             description: "Pastry wraps filled with ham, Mozzarella & Pineapples. A bitter-sweet special. Per dozen",
             price: 30,
@@ -91,6 +98,7 @@ function ItemListContainer() {
         },
         {
             id: 204,
+            category: "empanadas",
             title: "Lebanese",
             description: "Pastry wraps filled with lemon marinated beef and a mid east traditional seasoning - per dozen",
             price: 31,
@@ -99,6 +107,7 @@ function ItemListContainer() {
         },
         {
             id: 205,
+            category: "empanadas",
             title: "Egg & bacon",
             description: "Breakfast empanadas filled with egg, Cheese, Bacon and/or sausages - per dozen",
             price: 44,
@@ -107,6 +116,7 @@ function ItemListContainer() {
         },
 	    {
             id: 206,
+            category: "empanadas",
             title: "Salmon",
             description: "Breakfast empanadas filled with Smoked Salmon, Cream Cheese & Red Onions - per dozen",
             price: 44,
@@ -115,17 +125,16 @@ function ItemListContainer() {
         },
         {
             id: 207,
+            category: "empanadas",
             title: "Vegetarian",
             description: "Breakfast or lunch empanadas filled with egg, cheese, potatoes, onions, bell peppers, tomatoes, mushrooms",
             price: 38,
             pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=9",
             stock: 20
-        }
-    ];
-
-    let dinner= [
+        },
         {
             id: 301,
+            category: "dinner",
             title: "side salad",
             description: "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
             price: 24,
@@ -134,17 +143,16 @@ function ItemListContainer() {
         },
         {
             id: 302,
+            category: "dinner",
             title: "spiced Salmon Kebabs",
             description: "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
             price: 56,
             pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=30",
             stock: 3
-        }
-    ]
-
-    let lunch= [
+        },
         {
             id: 401,
+            category: "lunch",
             title: "Lebanese",
             description: "Pastry wraps filled with lemon marinated beef and a mid east traditional seasoning - per dozen",
             price: 31,
@@ -153,6 +161,7 @@ function ItemListContainer() {
         },
         {
             id: 402,
+            category: "lunch",
             title: "Egg & bacon",
             description: "Breakfast empanadas filled with egg, Cheese, Bacon and/or sausages - per dozen",
             price: 44,
@@ -173,16 +182,16 @@ function ItemListContainer() {
     const getCategory = async (products) => {
         switch (id) {
             case "empanadas":
-                products = empanadas
+                products = catalog.filter((prod)=> prod.category === "empanadas")
                 break;
             case "dinner":
-                products = dinner
+                products = catalog.filter((prod)=> prod.category === "dinner")
                 break;
             case "specials":
-                products = specials
+                products = catalog.filter((prod)=> prod.category === "specials")
                 break;
             case "lunch":
-                products = lunch
+                products = catalog.filter((prod)=> prod.category === "lunch")
                 break;
             default:
                 products = "saludo"

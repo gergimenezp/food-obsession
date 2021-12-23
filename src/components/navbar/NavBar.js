@@ -12,10 +12,10 @@ function NavBar(){
                     <Link to = {'/'}><h1 className="nombreSitio">Food Obsession</h1></Link>
             </div>
             <div className="botonera">
-                <div><NavLink to={'/category/empanadas'} exact activeClassName="currentCategory" className="category">Got Empanadas?</NavLink></div>
-                <div><NavLink to={'/category/dinner'} exact activeClassName="currentCategory" className="category">Dinner</NavLink></div>
-                <div><NavLink to={'/category/specials'} exact activeClassName="currentCategory" className="category">Specials</NavLink></div>
-                <div><NavLink to={'/category/lunch'} exact activeClassName="currentCategory" className="category">Organic Lunch</NavLink></div>
+                <div><NavLink to={'/category/empanadas'} className= {({ isActive }) => isActive? "currentCategory": "category"}>Got Empanadas?</NavLink></div>
+                <div><NavLink to={'/category/dinner'} className= {({ isActive }) => isActive? "currentCategory": "category"}>Dinner</NavLink></div>
+                <div><NavLink to={'/category/specials'} className= {({ isActive }) => isActive? "currentCategory": "category"}>Specials</NavLink></div>
+                <div><NavLink to={'/category/lunch'} className= {({ isActive }) => isActive? "currentCategory": "category"}>Organic Lunch</NavLink></div>
             </div>
             <Link to = {'/cart'}><CartWidget /></Link>
         </nav>

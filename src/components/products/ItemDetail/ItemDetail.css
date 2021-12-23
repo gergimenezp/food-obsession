@@ -54,3 +54,20 @@
     align-self: center;
     margin-bottom: 30px;
 }
+
+.back-container{
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.back-button{
+    width: 300px;
+    background-color: #c2c2c2;
+    margin-top: 50px;
+    height: 30px;
+}
+
+.back-button:hover{
+    background-color: #ff6347;
+}

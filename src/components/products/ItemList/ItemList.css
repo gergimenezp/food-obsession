@@ -33,6 +33,7 @@
     font-variant: small-caps;
     text-align: center;
 }
+
 .empanadas-conteiner{
     margin: 30px;
     display: flex;
@@ -55,7 +56,7 @@
 
 .empanadas-txt{
     display: flex;
-    justify-content:end;
+    justify-content: flex-end;
     flex-direction: column;
     margin-left: 20px;
 }
@@ -68,4 +69,5 @@
     display: flex;
     align-self: center;
     font-weight: bold;
+    margin-bottom: 30px;
 }

@@ -10,7 +10,7 @@ function ItemList({items}) {
     return(
         <div className="itemList-container">
         {
-            items == "saludo" ? (
+            items === "saludo" ? (
                     <div className="welcomeContainer">
                         <div className="welcome">Welcome to Food Obsession</div>
                         <div className="slogan">Catering for your every need...</div>

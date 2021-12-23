@@ -42,6 +42,11 @@
 }
 
 .currentCategory{
+    margin: 0px 2px;
+    font-size: large;
+    font-weight: bold;
+    padding: 0px 13px;
+    text-decoration: none;
     color: #d82000;
 }
 
