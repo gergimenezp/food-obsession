@@ -135,38 +135,65 @@ function ItemListContainer() {
         {
             id: 301,
             category: "dinner",
-            title: "side salad",
-            description: "Spinach, cherry tomatoes, red onions, avocados, garbanzo beans, Feta cheese and sunflower seeds with a homemade balsamic vinaigrette. - 4 portion",
-            price: 24,
-            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=14",
+            title: "Meatballs with Spaghetti",
+            description: "They are tender, loaded with herbs and cheese and covered with a classic tomato sauce. Siriously italian. 4 portion",
+            price: 68,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=32",
             stock: 8
         },
         {
             id: 302,
             category: "dinner",
-            title: "spiced Salmon Kebabs",
-            description: "Clean simple flavors, healthy and fresh, they look good and taste better! - 4 portions",
-            price: 56,
-            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=30",
-            stock: 3
+            title: "Spinach Artichoke Pasta",
+            description: "Spinach + artichoke + pasta =  spinach Artichoke dip made into a pasta dish. With Garlic Bread. 4 portion.",
+            price: 60,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=33",
+            stock: 5
+        },
+        {
+            id: 303,
+            category: "dinner",
+            title: "napolitan fried steak",
+            description: "Traditional argentinian 'milanesas alla napotilatna'. Fried stake with tomato sauce and melted mozzarella. 4 portion.",
+            price: 63,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=27",
+            stock: 16
         },
         {
             id: 401,
             category: "lunch",
-            title: "Lebanese",
-            description: "Pastry wraps filled with lemon marinated beef and a mid east traditional seasoning - per dozen",
-            price: 31,
-            pictureURL: "https://www.gastrotradicional.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/02/como-preparar-empanadas-arabes-1.jpg",
-            stock: 5
+            title: "Wraps",
+            description: "With lettuce, tomatoes, cabbage, onions, pickles. With dressing or salsa on the side, homemade balsamic vinaigrette, Caesar or Ranch; red or green salsa. Gluten free tortillas available. - Per unit",
+            price: 10,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=70",
+            stock: 35
         },
         {
             id: 402,
             category: "lunch",
-            title: "Egg & bacon",
-            description: "Breakfast empanadas filled with egg, Cheese, Bacon and/or sausages - per dozen",
-            price: 44,
-            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=7",
-            stock: 20
+            title: "quinoa salad",
+            description: "With grilled chiken breast, tomatoes, basil, feta cheese, red onions, spinach, sunflower seed. with dressing on the side, homemade balsamic vinaigrette, Caesar or Ranch. - 1 portion",
+            price: 10,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=67",
+            stock: 16
+        },
+        {
+            id: 403,
+            category: "lunch",
+            title: "steak sandwich",
+            description: "Grilled steak sandwich with Chimichurri Sauce with your choice of lettuce, tomatoes, onions. Can replace Chimichurri with Mayonnaise, mustard and/or ketchup.  French baguette, White, wheat or whole grain bread, gluten free available. 1 portion",
+            price: 13,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=84",
+            stock: 9
+        },
+        {
+            id: 404,
+            category: "lunch",
+            title: "Turkey sandwich",
+            description: "With cheese, lettuce, tomatoes, onions, pickles. Mayonnaise, mustard, ketchup or Chimichurri Sauce. White, wheat or whole grain bread, gluten free available. Low carb? No problem, get the meat with lettuce to wrap and veggies on the side. Gluten free bread available. 1 portion",
+            price: 13,
+            pictureURL: "https://ss-static-01.esmsv.com/id/65684/galeriaimagenes/obtenerimagen/?id=79",
+            stock: 30
         }
     ];
 
