@@ -1,8 +1,9 @@
 import React from "react";
-import './Item.css'
+import './Item.css';
+import {Link} from 'react-router-dom';
 
 
-function Item({ title, description, pictureURL, stock }) {
+function Item({ id, title, description, pictureURL, stock }) {
 
     String.prototype.trunc = 
       function(n){
@@ -14,7 +15,7 @@ function Item({ title, description, pictureURL, stock }) {
             <div className="item-title">{title}</div>
             <img className="item-pic" src={pictureURL} alt={title} />
             <div className="item-description">{description.trunc(60)}</div>
-            <button className="btn-detail">View details</button>
+            <button className="btn-detail"><Link to ={`/item/${id}`}>View details</Link></button>
             <div className="item-stock">Available stock: {stock}</div>
         </div>
     );

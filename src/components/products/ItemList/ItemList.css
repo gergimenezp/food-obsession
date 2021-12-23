@@ -8,3 +8,64 @@
 .listed-items{
     display: flex;
 }
+
+.welcomeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome{
+    display:flex;
+    margin-top: 40px;
+    align-self: center;
+    color: #ff6347;
+    font-size:250%;
+    font-weight: bolder;
+}
+
+.slogan{
+    display: flex;
+    margin-top: 20px;
+    align-self: center;
+    font-size: 170%;
+    color: #9c9c9c;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+.empanadas-conteiner{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.empanadas-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.empanadas-brand .empanadas-pic{
+    display: flex;
+    width: 75px;
+}
+
+.empanadas-txt{
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.empanadas-txt p{
+    display: flex;
+}
+
+.registered{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+}

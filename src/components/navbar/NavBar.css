@@ -1,6 +1,10 @@
-.myNav {
+.myNav{
     padding: 15px;
     background-color: #a5a4a4;
+}
+
+.myNav a{
+    text-decoration: none;
 }
 
 .logoContainer{
@@ -15,6 +19,8 @@
 
 .nombreSitio{
     margin-left: 10px;
+    text-decoration: none;
+    color: black;
 }
   
 .botonera{
@@ -22,15 +28,21 @@
     text-align: center;
 }
 
-.botonera div{
+.category{
     margin: 0px 2px;
     font-size: large;
     font-weight: bold;
     padding: 0px 13px;
+    color: #000000;
+    text-decoration: none;
 }
 
-.botonera div:hover{
-    color: #ff6347;
+.category:hover{
+    color: #d82000;
+}
+
+.currentCategory{
+    color: #d82000;
 }
 
 .shoppingCart{

@@ -12,7 +12,7 @@ function ItemDetail({item}) {
             </div>
             <div className="description">
             <div className="item-detail-description">{item.description}</div>
-            <div className="item-detail-price">Price: {item.price}</div>
+            <div className="item-detail-price">Price: ${item.price}</div>
             <ItemCount initialValue={1} stock={Number(item.stock)} />
             </div>
         </div>
