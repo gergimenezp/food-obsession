@@ -36,3 +36,15 @@
     width: 300px;
     background-color: #ff6347;
 }
+
+.btn-toList{
+    margin-top: 10px;
+    width: 300px;
+    background-color: #dbdbdb;
+}
+
+.added{
+    color: #d82000;
+    font-weight: bold;
+    text-align: center;
+}

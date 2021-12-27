@@ -1,27 +1,35 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import './ItemCount.css';
 
 
-function ItemCount({initialValue, stock}) {
+function ItemCount({value, add, sub, category}) {
 
-    const [value, setValue] = useState(initialValue);
+    const [type, setType] = useState("counter");
 
-    const handleAdd = () => {
-        if(value < stock) setValue((p) => p + 1);
-    };
-
-    const handleSub = () => {
-        if(value > initialValue) setValue((p) => p - 1);
-    };
+    const handleToCart = () =>{
+        setType("")
+    }
 
     return(
+        
         <div>
-            <div className="count-container">
-                <button className="btn-sub" onClick={handleSub}> sub - </button>
-                <p>{value}</p>
-                <button className="btn-add" onClick={handleAdd}> add + </button>
-            </div>
-            <button className="btn-toCart">Add to Cart</button>
+            {type == "counter" ? (
+                <div>
+                    <div className="count-container">
+                        <button className="btn-sub" onClick={sub}> sub - </button>
+                        <p>{value}</p>
+                        <button className="btn-add" onClick={add}> add + </button>
+                    </div>
+                    <button className="btn-toCart" onClick={handleToCart}>Add to Cart</button>
+                </div>
+            ) : (
+                <div>
+                    <p className="added">{value} added to cart</p>
+                    <Link to = {'/cart'}><button className="btn-toCart">Pay and finish</button></Link>
+                    <Link to = {`/category/${category}`}><button className="btn-toList">Continue shopping</button></Link>
+                </div>
+            )}
         </div>
     );
 };
