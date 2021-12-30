@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 import './ItemCount.css';
 
 
-function ItemCount({value, add, sub, category}) {
+function ItemCount({compType, value, add, sub, category, toCart}) {
 
-    const [type, setType] = useState("counter");
+    const [type, setType] = useState(true);
 
     const handleToCart = () =>{
-        setType("")
+        toCart();
+        setType(compType);
     }
 
     return(
         
         <div>
-            {type == "counter" ? (
+            {type == true ? (
                 <div>
                     <div className="count-container">
                         <button className="btn-sub" onClick={sub}> sub - </button>

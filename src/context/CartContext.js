@@ -1,5 +1,5 @@
 import React from 'react';
 
-    const ThemeContext = React.createContext([])
+    const CartContext = React.createContext()
 
 export default CartContext;
