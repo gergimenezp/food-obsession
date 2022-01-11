@@ -50,10 +50,28 @@
     color: #d82000;
 }
 
+.shoppingCartContainer{
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
 .shoppingCart{
+    display: flex;
     width: 40px;
     height: 40px;
     text-align: right;
-    margin-right: 20px;
-    padding: 0px 13px;
+}
+
+.itemsInCart{
+    display: flex;
+    background-color: #d82000;
+    border-radius: 100%;
+    color:#fdf5ec;
+    justify-content: space-around;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    font-size: small;
 }

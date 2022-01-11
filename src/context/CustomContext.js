@@ -2,19 +2,14 @@ import React from "react";
 import CartContext from "./CartContext";
 
 function CustomContext({children}){
-    let arr = []
+    let productsInCart = []
 
-    function addItem(prod){
-        if (isInCart(prod.id) === false){
-            arr.push(prod)
-        }
-        else {
-            alert("This item is already in your cart")
-        }
+    function checkItems(){
+        return productsInCart
     }
 
     function isInCart(id){
-        if(arr.find((p) => p.id === id) === undefined){
+        if(productsInCart.find((p) => p.id === id) === undefined){
             return false
         }
         else{
@@ -22,12 +17,27 @@ function CustomContext({children}){
         }
     }
 
-    function checkItems(){
-        return arr
+    function addItem(prod){
+        if (isInCart(prod.id) === false){
+            productsInCart.push(prod)
+        }
+        else {
+            alert("This item is already in your cart")
+        }
     }
 
+    function removeItem(i){
+        productsInCart.splice(i, 1)
+    }
+
+    function clear(){
+        productsInCart = []
+    }
+
+    const itemsAdded = () => productsInCart.reduce((total, p)=> total + p.quantity, 0 )
+
     return(
-        <CartContext.Provider value={{addItem, isInCart, checkItems}}>
+        <CartContext.Provider value={{addItem, isInCart, checkItems, removeItem, clear, itemsAdded}}>
             {children}
         </CartContext.Provider>
     )

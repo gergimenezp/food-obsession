@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './NavBar.css';
 import logo from '../../assets/img/logoFO.png';
 import CartWidget from './CartWidget';
