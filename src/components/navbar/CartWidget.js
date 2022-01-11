@@ -11,10 +11,6 @@ function CartWidget(){
 
     const renderItems = ValueContext.itemsAdded();
 
-    useEffect(()=>{
-        ValueContext.checkItems();
-    })
-
     return(
         <>
             {shoppingBasket.length !== 0 ? (

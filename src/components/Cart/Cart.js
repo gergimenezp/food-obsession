@@ -7,20 +7,18 @@ function Cart(){
 
     const ValueContext = useContext(CartContext);
 
-    const [shoppingBasket, setShoppingBasket] = useState(ValueContext.checkItems());
+    const shoppingBasket = ValueContext.checkItems();
 
-    let totalMount = shoppingBasket.reduce((total, p)=> total + (p.quantity * p.price), 0 )
+    const totalToPay = ValueContext.cartTotal();
 
     const handleErase = () => {
         ValueContext.clear();
-        setShoppingBasket(ValueContext.checkItems());
     }
 
+    console.log(shoppingBasket);
     const handleRemove = (id) =>{
         ValueContext.removeItem(id)
-        setShoppingBasket(ValueContext.checkItems());
     }
-
 
     return(
         <>
@@ -28,9 +26,10 @@ function Cart(){
             <div className="cart-detail">
                 <h2 className="cart-title">Your cart review</h2>
                 <ul>
-                    {shoppingBasket.map((p)=> <li className="cart-item">{p.quantity} x <span className="cart-productName">{p.name}</span> (${p.price}) = <span className="red">${p.price * p.quantity}</span> <button>x</button></li>)}
+                    {shoppingBasket.map((p)=> <li className="cart-item">{p.quantity} x <span className="cart-productName">{p.name}</span> (${p.price}) = <span className="red">${p.price * p.quantity}</span> <button onClick={()=>handleRemove(p.id)}>x</button></li>)}
                 </ul>
-                <h4 className="cart-total">Total: <span className="red">${totalMount}</span> </h4>
+                <h4 className="cart-total">Total: <span className="red">${totalToPay}</span> </h4>
+                <button onClick={handleErase}>Clear Cart</button>
                 
             </div>
         ) : (
