@@ -3,25 +3,23 @@ import CartContext from "./CartContext";
 
 function CustomContext({children}){
 
-    let list = []
+    const [productsInCart, setProductsInCart] = useState([])
 
-    const [productsInCart, setProductsInCart] = useState(list)
-
-    function checkItems(){
+    const checkItems = () => {
         return productsInCart
     }
 
-    function isInCart(id){
+    const isInCart = (id) => {
         if(productsInCart.find((p) => p.id === id) === undefined){
-            return false
+            return "no"
         }
         else{
-            return true
+            return "yes"
         }
     }
 
-    function addItem(prod){
-        if (isInCart(prod.id) === false){
+    const addItem = (prod) => {
+        if (isInCart(prod.id) === "no"){
             productsInCart.push(prod)
         }
         else {
@@ -31,7 +29,7 @@ function CustomContext({children}){
 
     const removeItem = (id) => setProductsInCart(productsInCart.filter(prod => prod.id !== id));
 
-    const clear = () => setProductsInCart(list);
+    const clear = () => setProductsInCart([]);
 
     const itemsAdded = () => productsInCart.reduce((total, p)=> total + p.quantity, 0 );
 

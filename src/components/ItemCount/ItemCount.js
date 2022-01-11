@@ -5,17 +5,21 @@ import './ItemCount.css';
 
 function ItemCount({compType, value, add, sub, category, toCart}) {
 
-    const [type, setType] = useState(true);
+    const [type, setType] = useState(compType);
 
     const handleToCart = () =>{
         toCart();
-        setType(compType);
+        setType("yes");
     }
+
+    console.log(type);
+
+    console.log(compType);
 
     return(
         
         <div>
-            {type == true ? (
+            {type === "no" ? (
                 <div>
                     <div className="count-container">
                         <button className="btn-sub" onClick={sub}> sub - </button>

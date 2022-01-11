@@ -6,7 +6,7 @@ import CartContext from "../../../context/CartContext";
 
 function ItemDetail({item}) {
 
-    const myContext = useContext(CartContext)
+    const ValueContext = useContext(CartContext)
 
     const [value, setValue] = useState(1);
 
@@ -18,10 +18,10 @@ function ItemDetail({item}) {
         if(value > 1) setValue((p) => p - 1);
     };
 
-    const type = myContext.isInCart(item.id);
+    const type = ValueContext.isInCart(item.id);
 
     const toCart = () => {
-        myContext.addItem({id: item.id, quantity: value, name: item.title, price: item.price})
+        ValueContext.addItem({id: item.id, quantity: value, name: item.title, price: item.price})
     };
 
     return(
