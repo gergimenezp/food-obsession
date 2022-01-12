@@ -11,6 +11,8 @@ function Cart(){
 
     const totalToPay = ValueContext.cartTotal();
 
+    console.log(shoppingBasket);
+
     const handleErase = () => {
         ValueContext.clear();
     }

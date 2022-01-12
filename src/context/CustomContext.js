@@ -20,7 +20,7 @@ function CustomContext({children}){
 
     const addItem = (prod) => {
         if (isInCart(prod.id) === "no"){
-            productsInCart.push(prod)
+            setProductsInCart( prev => [...prev, prod] );
         }
         else {
             alert("This item is already in your cart")
