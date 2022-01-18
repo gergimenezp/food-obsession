@@ -43,7 +43,10 @@ function Cart(){
 
         const ordersCollection = collection(db, "orders");
 
-        addDoc(ordersCollection, order).then(({id}) => setOrderId(id));
+        addDoc(ordersCollection, order).then(({id}) => {
+            setOrderId(id);
+            ValueContext.clear();
+        });
 
         shoppingBasket.map((p)=>{
             const itemDoc = doc(db, "items", p.id);
@@ -54,17 +57,12 @@ function Cart(){
 
     }
 
-    const handleFinish = () => {
-        ValueContext.clear();
-        setOrderId(0);
-    }
-
     if(orderId != 0){
         return (
             <div className="cart-detail">
                 <h2 className="cart-title">Thank you for your purchase</h2>
                 <h3>Your order id is {orderId}</h3>
-                <button onClick={handleFinish}>Finish</button>
+                <Link to = {"/"}><button>Finish</button></Link>
             </div>
         )
     }
