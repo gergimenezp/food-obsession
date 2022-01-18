@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { addDoc, collection, getFirestore, doc, updateDoc, getDoc } from 'firebase/firestore';
 import CartContext from '../../context/CartContext';
 import { Link } from "react-router-dom";
 import './Cart.css';
@@ -44,6 +44,13 @@ function Cart(){
         const ordersCollection = collection(db, "orders");
 
         addDoc(ordersCollection, order).then(({id}) => setOrderId(id));
+
+        shoppingBasket.map((p)=>{
+            const itemDoc = doc(db, "items", p.id);
+            getDoc(itemDoc).then((snapshot)=>{
+                updateDoc(itemDoc, { stock: snapshot.data().stock - p.quantity })
+            });
+        });
 
     }
 
