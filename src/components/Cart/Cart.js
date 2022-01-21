@@ -24,6 +24,10 @@ function Cart(){
         ValueContext.removeItem(id)
     }
 
+    var today = new Date();
+
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+' @ '+today.getHours() + ":" + today.getMinutes();
+
     const handlePlace = () => {
 
         const order = {
@@ -36,6 +40,7 @@ function Cart(){
                     price: p.price,
                 }
             }),
+            date: date,
             total: totalToPay
         };
 
