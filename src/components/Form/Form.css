@@ -1,0 +1,107 @@
+.form-detail{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.buyerForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.buyerForm-input{
+    display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-submit{
+    display: flex;
+    align-self: flex-end;
+    background-color: #ff6347;
+    font-weight: bold;
+    flex-basis: 30px;
+    border-radius: 0.25rem;
+}
+
+.finish-detail{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.red{
+   color: #ff6347; 
+}
+
+.finish-title{
+    text-align: center;
+}
+
+.finish-btn{
+    width: 200px;
+    background-color: #dbdbdb;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.form-alert{
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+@keyframes loaderEffect {
+    0% {
+        color: #ff6347;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 1;
+    }
+
+    50%{
+        color: #070707;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 0;
+    }
+
+    100% {
+        color: #ff6347;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 1;
+    }
+}
+
+.loading{
+    animation-name: loaderEffect;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}

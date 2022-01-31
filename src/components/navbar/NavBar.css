@@ -1,4 +1,7 @@
 .myNav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     padding: 15px;
     background-color: #a5a4a4;
 }
@@ -7,28 +10,36 @@
     text-decoration: none;
 }
 
-.logoContainer{
+.logo-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     margin-left: 20px;
 }
 
-.logoContainer img{
+.logo-container img{
     padding-top: 18px;
     width: 40px;
     height: 40px;
 }
 
-.nombreSitio{
+.siteName{
     margin-left: 10px;
     text-decoration: none;
     color: black;
 }
   
 .botonera{
-    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-shrink: 1;
 }
 
 .category{
+    display: flex;
     margin: 0px 2px;
     font-size: large;
     font-weight: bold;
@@ -41,7 +52,8 @@
     color: #d82000;
 }
 
-.currentCategory{
+.current-category{
+    display: flex;
     margin: 0px 2px;
     font-size: large;
     font-weight: bold;
@@ -50,11 +62,19 @@
     color: #d82000;
 }
 
-.shoppingCartContainer{
+.shoppingCart-container{
     display: flex;
-    flex-flow: row, nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     margin-right: 20px;
+}
+
+.shoppingCart-hidden{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-right: 20px;
+    visibility: hidden;
 }
 
 .shoppingCart{

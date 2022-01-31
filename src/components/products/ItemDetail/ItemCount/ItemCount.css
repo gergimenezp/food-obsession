@@ -1,0 +1,68 @@
+.count-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #808080;
+    width: 300px;
+}
+
+.count-container p{
+    display: flex;
+    font-weight: bold;
+}
+
+.btn-add{
+    display: flex;
+    background-color: #dbdbdb;
+    font-weight: bolder;
+    align-self: center;
+    border-radius: 0.25rem;
+}
+
+.btn-sub{
+    display: flex;
+    background-color: #dbdbdb;
+    font-weight: bolder;
+    align-self: center;
+    border-radius: 0.25rem;
+}
+
+.btn-toCart{
+    width: 300px;
+    background-color: #ff6347;
+    border-radius: 0.25rem;
+}
+
+.btn-toList{
+    margin-top: 10px;
+    width: 300px;
+    background-color: #dbdbdb;
+    border-radius: 0.25rem;
+}
+
+.added-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.added{
+    display: flex;
+    color: #d82000;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.edit{
+    display: flex;
+    border-radius: 0.25rem;
+    width: 30px;
+    height: 30px;
+}
+
+.edit-icon{
+    width: 18px;
+    margin: auto;
+}

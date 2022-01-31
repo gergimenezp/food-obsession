@@ -38,6 +38,7 @@
     width: 300px;
     height: auto;
     align-self: center;
+    border-radius: 0.50rem;
 }
 
 .item-detail-description{
@@ -66,6 +67,7 @@
     background-color: #c2c2c2;
     margin-top: 50px;
     height: 30px;
+    border-radius: 0.25rem;
 }
 
 .back-button:hover{

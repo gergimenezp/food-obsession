@@ -1,28 +1,27 @@
-import React, {useContext, useEffect} from "react";
-import carro from '../../assets/img/cart.png';
-import CartContext from '../../context/CartContext';
-import './NavBar.css'
+import React, { useContext, useEffect } from "react";
+import carro from "../../assets/img/cart.png";
+import CartContext from "../../context/CartContext";
+import "./NavBar.css";
 
-function CartWidget(){
+function CartWidget() {
+  const ValueContext = useContext(CartContext);
 
-    const ValueContext = useContext(CartContext);
+  const shoppingBasket = ValueContext.checkItems();
 
-    const shoppingBasket = ValueContext.checkItems();
+  const renderItems = ValueContext.itemsAdded();
 
-    const renderItems = ValueContext.itemsAdded();
-
-    return(
-        <>
-            {shoppingBasket.length !== 0 ? (
-                <div className="shoppingCartContainer">
-                    <img src={carro} alt="Shopping Cart" className="shoppingCart"/>
-                    <div className="itemsInCart">{renderItems}</div>
-                </div>
-            ) : (
-                <div></div>
-            )}
-        </>
-    )
+  return (
+    <div
+      className={
+        shoppingBasket.length !== 0
+          ? "shoppingCart-container"
+          : "shoppingCart-hidden"
+      }
+    >
+      <img src={carro} alt="Shopping Cart" className="shoppingCart" />
+      <div className="itemsInCart">{renderItems}</div>
+    </div>
+  );
 }
 
-export default CartWidget
+export default CartWidget;

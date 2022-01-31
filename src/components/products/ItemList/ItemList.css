@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.welcomeContainer{
+.welcome-container{
     display: flex;
     flex-direction: column;
     justify-content: center;

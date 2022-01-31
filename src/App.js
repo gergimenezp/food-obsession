@@ -1,12 +1,11 @@
 import './App.css';
-import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar'
 import ItemDetailContainer from './components/products/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/products/ItemListContainer/ItemListContainer'
-import CartContext from './context/CartContext'
 import Cart from './components/Cart/Cart';
 import CustomContext from './context/CustomContext';
+import Form from './components/Form/Form';
 
 function App() {
 
@@ -19,6 +18,7 @@ function App() {
           <Route exact path = "/category/:id" element = {<ItemListContainer/>}/>
           <Route exact path = "/item/:id" element = {<ItemDetailContainer />}/>
           <Route exact path = "/cart" element = {<Cart/>}/>
+          <Route exact path = "/form" element = {<Form/>}/>
         </Routes>
       </BrowserRouter>
     </CustomContext>

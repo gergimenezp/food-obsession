@@ -11,7 +11,7 @@ function ItemList({items}) {
         <div className="itemList-container">
         {
             items === "saludo" ? (
-                    <div className="welcomeContainer">
+                    <div className="welcome-container">
                         <div className="welcome">Welcome to Food Obsession</div>
                         <div className="slogan">Catering for your every need...</div>
                         <div className="empanadas-conteiner">

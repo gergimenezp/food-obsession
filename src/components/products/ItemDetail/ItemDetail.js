@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import ItemCount from "../../ItemCount/ItemCount";
+import ItemCount from "./ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 import './ItemDetail.css';
 import CartContext from "../../../context/CartContext";
@@ -21,7 +21,11 @@ function ItemDetail({item}) {
     const type = ValueContext.isInCart(item.id);
 
     const toCart = () => {
-        ValueContext.addItem({id: item.id, quantity: value, name: item.title, price: item.price})
+        ValueContext.addItem({id: item.id, quantity: value, name: item.title, price: item.price, category: item.category})
+    };
+
+    const remove = () => {
+        ValueContext.removeItem(item.id)
     };
 
     return(
@@ -34,7 +38,7 @@ function ItemDetail({item}) {
                 <div className="description">
                 <div className="item-detail-description">{item.description}</div>
                 <div className="item-detail-price">Price: ${item.price}</div>
-                <ItemCount compType={type} value={value} add={more} sub={less} toCart={toCart} category={item.category} />
+                <ItemCount remove={remove} compType={type} value={value} add={more} sub={less} toCart={toCart} category={item.category} />
                 </div>
             </div>
             <div className="back-container">

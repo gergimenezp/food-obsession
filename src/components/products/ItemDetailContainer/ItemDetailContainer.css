@@ -1,6 +1,33 @@
+@keyframes loaderEffect {
+    0% {
+        color: #ff6347;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 1;
+    }
+
+    50%{
+        color: #070707;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 0;
+    }
+
+    100% {
+        color: #ff6347;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 250%;
+        opacity: 1;
+    }
+}
+
 .loading{
-    color: #ff6347;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 250%;
+    animation-name: loaderEffect;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }

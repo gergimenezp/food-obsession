@@ -3,18 +3,21 @@ import CartContext from "./CartContext";
 
 function CustomContext({children}){
 
-    const [productsInCart, setProductsInCart] = useState([])
+    const [productsInCart, setProductsInCart] = useState([]);
+
+    const [endPurchase, setEndPurchase] = useState(false);
 
     const checkItems = () => {
         return productsInCart
     }
 
     const isInCart = (id) => {
-        if(productsInCart.find((p) => p.id === id) === undefined){
+        let prod = productsInCart.find((p) => p.id === id)
+        if(prod === undefined){
             return "no"
         }
         else{
-            return "yes"
+            return prod.quantity
         }
     }
 
@@ -35,8 +38,16 @@ function CustomContext({children}){
 
     const cartTotal = () => productsInCart.reduce((total, p)=> total + (p.quantity * p.price), 0 );
 
+    const checkEndStatus = () => {
+        return endPurchase
+    }
+
+    const purchaseEnd = () => setEndPurchase(true);
+
+    const resetCart = () => setEndPurchase(false);
+
     return(
-        <CartContext.Provider value={{addItem, isInCart, checkItems, removeItem, clear, itemsAdded, cartTotal}}>
+        <CartContext.Provider value={{addItem, isInCart, checkItems, removeItem, clear, itemsAdded, cartTotal, checkEndStatus, purchaseEnd, resetCart}}>
             {children}
         </CartContext.Provider>
     )
