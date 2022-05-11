@@ -51,6 +51,6 @@ El Formulario de check out es accesible directamente desde la barra de navegaci�
 
 ### Proceso de compra
 
-A continuación se muestra un proceso de compra. El happy path, lleval usuario a seleccionar los objetos deseados, completar sus datos y finalizar la compra.
+A continuación se muestra un proceso de compra. El happy path, lleva al usuario a seleccionar los objetos deseados, completar sus datos y finalizar la compra.
 
 ![app-purchase-happy-path](https://github.com/gergimenezp/food-obsession/blob/main/src/assets/img/happy-path.gif)
